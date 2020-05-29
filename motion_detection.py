@@ -35,7 +35,7 @@ while cap.isOpened():
     for con in contours:
         x, y, w, h = cv2.boundingRect(con)
         # if area < 1000 dont draw box
-        if cv2.contourArea(con) < 1000:
+        if cv2.contourArea(con) < 1700:
             continue
         cv2.rectangle(frame1, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
