@@ -33,6 +33,9 @@ while True :
             # draw text on frame
             cv2.putText(frame, "Status : {}".format('Movement'),
                     (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 3)
+            
+            cv2.putText(frame, "w={},h={}".format(w,h), (x,y - 10), cv2.FONT_HERSHEY_COMPLEX, 0.7 , (0,255,0), 2)
+
         cv2.imshow('feed', frame)
         cv2.imshow('fgmask', fgmask)
 
